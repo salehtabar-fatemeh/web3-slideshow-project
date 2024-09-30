@@ -37,7 +37,6 @@ div.slide-show {
     position: relative;
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
   div.slide {
     width: 100%;
@@ -51,7 +50,34 @@ div.slide-show {
   div.slide img {
     width: 100%;
     height: 100%;
+    object-fit: contain;
   }
   div.slide.active {
     visibility: visible;
+  }
+  div.show-numberslides{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 8%;
+    left: 45%;
+  }
+  div.number1{
+    background-color: rgb(42, 165, 69);
+    width: 40px;
+    height: 6px;
+    margin-right: 5px
+  }
+  div.number2{
+    background-color: rgb(157, 165, 42);
+    width: 40px;
+    height: 6px;
+    margin-right: 5px
+
+  }
+  div.number3{
+    background-color: rgb(165, 42, 108); 
+    width: 40px;
+    height: 6px;
+
   }
