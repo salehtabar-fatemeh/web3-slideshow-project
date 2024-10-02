@@ -15,6 +15,7 @@ div.slide-show {
     color: aliceblue;
     border-color: transparent;
     border-radius: 50%;
+    visibility: hidden;
   }
   div.slide-show .back-btn {
     width: 50px;
@@ -27,6 +28,7 @@ div.slide-show {
     color: aliceblue;
     border-color: transparent;
     border-radius: 50%;
+    visibility: hidden;
   }
   .back-btn span,
   .next-btn span {

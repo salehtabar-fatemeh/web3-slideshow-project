@@ -23,4 +23,24 @@ for(let i=0; i<slidShowes.length; i++){
             activeSlide.previousElementSibling.classList.add("active");
         }
     })
+
+    slidShowes[i].addEventListener("mouseenter",()=>{
+        nextBtn.style.visibility = "visible";
+    })
+    slidShowes[i].addEventListener("mouseleave",()=>{
+        nextBtn.style.visibility = "hidden";
+    })
+
+
+    slidShowes[i].addEventListener("mouseenter",()=>{
+        backBtn.style.visibility = "visible";
+    })
+    slidShowes[i].addEventListener("mouseleave",()=>{
+        backBtn.style.visibility = "hidden";
+    })
+
+
+
+
 }
+
