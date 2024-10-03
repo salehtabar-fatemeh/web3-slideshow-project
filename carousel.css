@@ -64,22 +64,22 @@ div.slide-show {
     bottom: 8%;
     left: 45%;
   }
-  div.number1{
+  div.colorful-btn1{
     background-color: rgb(42, 165, 69);
     width: 40px;
     height: 6px;
-    margin-right: 5px
+    margin-right: 10px;
   }
-  div.number2{
-    background-color: rgb(157, 165, 42);
-    width: 40px;
-    height: 6px;
-    margin-right: 5px
-
+  div.colorful-btn1:hover{
+    transform: scaleX(1.5);
+    
   }
-  div.number3{
+  div.colorful-btn2:hover{
+    transform: scaleX(1.5);
+    
+  }
+  div.colorful-btn2{
     background-color: rgb(165, 42, 108); 
     width: 40px;
     height: 6px;
-
   }
