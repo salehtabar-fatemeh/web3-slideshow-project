@@ -5,6 +5,22 @@ for(let i=0; i<slidShowes.length; i++){
     const slides = slidShowes[i].querySelector(".slides");
     const colorfulBtn1 = slidShowes[i].querySelector(".colorful-btn1");
     const colorfulBtn2 = slidShowes[i].querySelector(".colorful-btn2");
+    const colorfulBtn3 = slidShowes[i].querySelector(".colorful-btn3");
+
+    function updateColorfulBtns() {
+        const activeSlide = slidShowes[i].querySelector(".active");
+        colorfulBtn1.style.transform = "scale(1)";
+        colorfulBtn2.style.transform = "scale(1)";
+        colorfulBtn3.style.transform = "scale(1)";
+
+        if (activeSlide === slides.firstElementChild) {
+            colorfulBtn1.style.transform = "scale(1.5)";  
+        } else if (activeSlide === slides.children[1]) {
+            colorfulBtn2.style.transform = "scale(1.5)";
+        } else if (activeSlide === slides.lastElementChild) {
+            colorfulBtn3.style.transform = "scale(1.5)"; 
+        }
+    }
 
     function nextBtn(){
         const activeSlide = slidShowes[i].querySelector(".active");
@@ -14,6 +30,7 @@ for(let i=0; i<slidShowes.length; i++){
         }else{
             activeSlide.nextElementSibling.classList.add("active");
         }
+        updateColorfulBtns();
     } 
 
     function backBtn(){
@@ -24,6 +41,7 @@ for(let i=0; i<slidShowes.length; i++){
         }else{
             activeSlide.previousElementSibling.classList.add("active");
         }
+        updateColorfulBtns();
     }
     let timeId = setInterval(nextBtn, 5000);
 
@@ -38,12 +56,9 @@ for(let i=0; i<slidShowes.length; i++){
     slidShowes[i].addEventListener("mouseleave",()=>{
         nextSlid.style.visibility = "hidden";
         backSlid.style.visibility = "hidden";
-        timeId = setInterval(nextBtn, 5000);
+        timeId = setInterval(nextBtn, 3000);
     })
-
-    colorfulBtn1.addEventListener("click", backBtn);
-    colorfulBtn2.addEventListener("click", nextBtn);
-       
+    updateColorfulBtns();
 }
 
  
