@@ -67,19 +67,17 @@ div.slide-show {
   div.colorful-btn1{
     background-color: rgb(42, 165, 69);
     width: 40px;
-    height: 6px;
-    margin-right: 10px;
-  }
-  div.colorful-btn1:hover{
-    transform: scaleX(1.5);
-    
-  }
-  div.colorful-btn2:hover{
-    transform: scaleX(1.5);
-    
+    height: 8px;
+    margin-right: 15px;
   }
   div.colorful-btn2{
+    background-color: rgb(142, 165, 42); 
+    width: 40px;
+    height: 8px;
+    margin-right: 15px;
+  }
+  div.colorful-btn3{
     background-color: rgb(165, 42, 108); 
     width: 40px;
-    height: 6px;
+    height: 8px;
   }
